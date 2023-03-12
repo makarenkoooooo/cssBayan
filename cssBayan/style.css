@@ -71,3 +71,9 @@ h1 {
   height: 15em;
   transition: all 0.5s;
 }
+
+@media (min-width: 320px) {
+  .mem {
+    font-size: 1em;
+  }
+}

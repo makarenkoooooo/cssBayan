@@ -1,0 +1,91 @@
+.mem {
+  max-width: 500px;
+  margin: 2% auto;
+  padding: 2%;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.mem:hover {
+  color: blue;
+}
+
+h1 {
+  text-align: center;
+}
+
+.mem-item {
+  margin-bottom: 1em;
+}
+
+.mem-image-wrap {
+  max-width: 15em;
+  margin: 0 auto;
+  height: 0;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.mem-image-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.mem-item-title {
+  display: block;
+  cursor: pointer;
+  transition: background 0.2s ease-out;
+  background-image: url(./icons/icon-open.png);
+}
+
+.mem-item-title:hover {
+  color: blue;
+
+  background-color: red;
+}
+
+.mem-item-input {
+  appearance: none;
+}
+
+.mem-item-input:checked + .mem-image-wrap {
+  height: 15em;
+  transition: all 0.5s;
+  padding: 10%;
+}
+
+.mem-item-input:checked + .mem-image-wrap img {
+  transform: scale(1.5);
+  transition: 1s;
+}
+
+.mem-item-input:hover + .mem-image-wrap img {
+  transform: scale(1.5);
+  transition: 1s;
+}
+
+.mem-item-input:hover + .mem-image-wrap {
+  height: 15em;
+  transition: all 0.5s;
+}
+
+@media (min-width: 320px) {
+  .mem {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 820px) {
+  .mem {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .men {
+    font-size: 2em;
+  }
+}

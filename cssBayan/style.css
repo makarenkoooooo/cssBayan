@@ -83,3 +83,9 @@ h1 {
     font-size: 1.2em;
   }
 }
+
+@media (min-width: 1920px) {
+  .men {
+    font-size: 2em;
+  }
+}
